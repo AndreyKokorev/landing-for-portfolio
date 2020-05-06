@@ -1,0 +1,186 @@
+@media screen and (max-width: 500px) {
+  header {
+    nav {
+      display: none;
+    }
+  }
+
+  main {
+    display: grid;
+    grid-template-rows: 707px 1074px 800px 804px 980px 864px 620px 1615px 515px 767px 953px;
+
+
+    .completed-projects {
+      display: grid;
+
+      &__inner-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-row: auto auto;
+
+        .slider-wrapper {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 2;
+          grid-row: 2/3;
+          width: 680px;
+          height: 482px;
+          background: green;
+        }
+
+      }
+    }
+
+    .online-control {
+      display: grid;
+
+      .order-form {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        &__checkbox-wrapper {
+          grid-column-start: 1;
+        }
+
+
+        &__submit-button {
+          grid-row-start: 4;
+        }
+      }
+    }
+
+    .order-block {
+      display: none;
+    }
+
+    .feedback-section {
+      display: grid;
+      background: rgba(225, 0, 255, 0.527);
+
+      &__form {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 600px;
+        height: 600px;
+        background: violet;
+
+        .input-wrapper {
+          &-text {}
+
+          &-phone {
+            grid-column-start: 1;
+          }
+        }
+      }
+
+    }
+
+    .architecture-styles {
+      display: grid;
+      grid-template-columns: 1fr;
+      background: rgba(255, 255, 0, 0.507);
+
+      .style-list {
+        display: none;
+      }
+
+      &__img-box {
+        background: #000;
+      }
+    }
+
+    .design-project {
+      display: grid;
+      background: rgba(153, 205, 50, 0.486);
+
+      &__img {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: #000;
+      }
+
+      &__column-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 400px);
+        justify-content: space-around;
+      }
+
+      &__column {
+        background: rgba(172, 255, 47, 0.575);
+      }
+    }
+
+    .six-steps {
+      display: none;
+    }
+
+    .our-team {
+      display: grid;
+      min-height: 600px;
+      background: rgba(222, 184, 135, 0.473);
+
+      &__team-box {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+        //Если в дочернем убрать min-height, то элементы будут схлопываться
+        //grid-template-rows: 400px;
+        justify-content: space-around;
+
+        .specialist-wrapper {
+          min-height: 400px;
+          background: #000;
+        }
+      }
+    }
+
+    .our-clients {
+      display: none;
+    }
+
+    .feedback-section {
+      display: grid;
+      justify-items: center;
+      width: 100%;
+      background: rgba(225, 0, 255, 0.527);
+
+      &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 600px;
+        min-height: 600px;
+        background: rgb(171, 130, 238);
+
+        .input-wrapper {
+          &-text {}
+
+          &-phone {
+            grid-column-start: 1;
+          }
+
+          &-question {
+            grid-column-start: 1;
+            grid-column-end: 2;
+          }
+
+          &-checkbox {
+            grid-column-start: 1;
+            grid-column-end: 2;
+          }
+        }
+
+        button {
+          width: 20%;
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
+      }
+
+    }
+  }
+
+  footer {
+    display: none;
+  }
+}
