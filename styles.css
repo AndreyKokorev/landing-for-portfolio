@@ -2441,7 +2441,7 @@ main .map-api .map {
 	}
 
 	main .main-billboard .inner-wrapper .text-wrapper .calculate-button {
-		margin-right: 20px;
+		margin-right: 0px;
 		background: #E3B873;
 	}
 
@@ -2610,7 +2610,6 @@ main .map-api .map {
 
 	main .online-control__inner-wrapper .order-form__input-wrapper {
 		position: relative;
-		left: 25px;
 		width: 340px;
 	}
 
@@ -2790,10 +2789,6 @@ main .map-api .map {
 		display: none;
 	}
 
-	main .our-team .team-box__specialist-wrapper {
-		//width: 300px;
-	}
-
 	main .our-clients {
 		display: none;
 	}
@@ -2945,6 +2940,12 @@ main .map-api .map {
 }
 
 @media screen and (max-width: 401px) {
+	main .completed-projects__inner-wrapper {
+  width: auto;
+}
+	main .completed-projects__inner-wrapper .slider-wrapper {
+    width: 339px !important;
+}
 	main .online-control {
 		max-height: 770px;
 	}
